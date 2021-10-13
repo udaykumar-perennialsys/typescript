@@ -1,0 +1,932 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  background: #e5e5e5;
+} */
+.header {
+  position: absolute;
+  width: 1366px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+}
+.logo {
+  position: absolute;
+  width: 151px;
+  height: 30px;
+  left: 20px;
+  top: 21px;
+}
+.notification-icons {
+  position: absolute;
+  width: 24px;
+  height: 24.72px;
+  left: 1229px;
+  top: 24px;
+}
+.user-profile {
+  position: absolute;
+  width: 65px;
+  height: 37px;
+  left: 1277px;
+  top: 18px;
+}
+#logo,
+#logout-btn {
+  display: none;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 72px;
+  padding-bottom: 38px;
+  background: #e5e5e5;
+}
+.dash {
+  position: absolute;
+  width: 131px;
+  height: 33px;
+  left: 24px;
+  top: 104px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: flex-end;
+  color: #1a1a1a;
+}
+.nav-container {
+  position: absolute;
+  width: 1318px;
+  height: 60px;
+  left: 24px;
+  top: 161px;
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.strip {
+  width: 150px;
+  height: 3px;
+  background: #e8544b;
+  border-radius: 10px;
+}
+.summary {
+  position: absolute;
+  left: 24px;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 175%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1a1a1a;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  text-decoration: none;
+}
+.ver-strip {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  left: 149px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+}
+.details {
+  position: absolute;
+  left: 174px;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 175%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1a1a1a;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  text-decoration: none;
+}
+.ver-strip2 {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  left: 250px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+}
+#nav-conta {
+  display: none;
+}
+.account-summary {
+  position: absolute;
+  width: 1318px;
+  height: 145px;
+  left: 24px;
+  top: 233px;
+
+  background: #fff0f3;
+  border: 1px solid rgba(217, 4, 41, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+.summary-title {
+  position: absolute;
+  width: 87px;
+  height: 25px;
+  left: 24px;
+  top: 24px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: flex-end;
+
+  color: #1a1a1a;
+}
+.acc-num-title,
+.acc-num {
+  position: absolute;
+  width: 117px;
+  height: 12px;
+  left: 24px;
+  top: 74px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.38);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+.acc-num {
+  top: 94px;
+  left: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.15px;
+  color: #333333;
+}
+.income {
+  left: 368px;
+}
+.spend {
+  left: 712px;
+}
+#acc-num-title,
+#acc-num-mVersion,
+.income-mv,
+.acc-num-mvincome {
+  display: none;
+}
+.serv {
+  position: absolute;
+  width: 58px;
+  height: 19px;
+  left: 24px;
+  top: 410px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: flex-end;
+
+  color: #1a1a1a;
+}
+.more-info {
+  position: absolute;
+  width: 189px;
+  height: 19px;
+  left: 90px;
+  top: 410px;
+
+  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: flex-end;
+
+  color: #1a1a1a;
+}
+.currentService {
+  position: absolute;
+  width: 1318px;
+  height: 192px;
+  left: 24px;
+  top: 441px;
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+.current-service {
+  position: absolute;
+  width: 148px;
+  height: 25px;
+  left: 24px;
+  top: 24px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #1a1a1a;
+}
+/* .curr-acc,
+.curr-acc-payroll,
+.curr-acc-payments {
+  position: absolute;
+  width: 218px;
+  height: 95px;
+  left: 24px;
+  top: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+} */
+.c_acc_info,.a_acc_info {
+  position: absolute;
+  height: 100px;
+  left: 24px;
+  top: 73px;
+  right: 24px;
+  width: 96%;
+  display: flex;
+  gap: 30px;
+  
+}
+.c_serv_div {
+  width: 218px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.c_serv_div >span {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1a1a1a;
+}
+.hoverBtnDiv{
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  border: 1px solid black;
+  display: none;
+  top: -20vh;
+  left: 70vh;
+}
+
+
+
+
+
+.curr-acc-payroll {
+  left: 290px;
+}
+.curr-acc-payments {
+  left: 532px;
+}
+.curr-acc-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1a1a1a;
+}
+#mobile-version-icons,
+#m-curr-acc,
+.icons-setion,
+.icons-setion,
+.m-curr-accounts,
+.payrolls,
+#avail-service {
+  display: none;
+}
+.available-service {
+  position: absolute;
+  width: 1318px;
+  height: 192px;
+  left: 24px;
+  top: 645px;
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+.avail-serv-title {
+  position: absolute;
+  width: 161px;
+  height: 25px;
+  left: 24px;
+  top: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #1a1a1a;
+}
+.avail-service-description,
+.invest,
+.tax-pay,
+.loans {
+  position: absolute;
+  width: 218px;
+  height: 95px;
+  left: 24px;
+  top: 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 17.5px;
+}
+.invest {
+  left: 280px;
+}
+.tax-pay {
+  left: 532px;
+}
+.loans {
+  left: 784px;
+}
+.availbale-option-title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1a1a1a;
+}
+.copyRight {
+  position: absolute;
+  width: 1366px;
+  height: 38px;
+  left: 0px;
+  top: 861px;
+  background: #f2f2f2;
+}
+.rights {
+  position: absolute;
+  width: 120px;
+  height: 16px;
+  left: 629px;
+  top: 11px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1a1a1a;
+}
+.review_modal {
+  position: absolute;
+  width: 40vw;
+  height: 50vh;
+  background-color: transparent;
+  top: 25vh;
+  left: 30%;
+}
+.review_modal > div {
+  width: 90%;
+  height: 90%;
+  margin: 2.5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(217, 4, 41);
+  opacity: 0.9;
+}
+.review_modal > div > h2 {
+  margin-top: 30px;
+  color: white;
+  font-size: 30px;
+}
+.review_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.rating {
+  display: flex;
+  margin-bottom: 20px;
+}
+.rating > li {
+  list-style: none;
+}
+.rating_item {
+  cursor: pointer;
+  font-size: 50px;
+  color: yellow;
+}
+.rating_item::before {
+  content: "\2605";
+}
+.rating_item.active ~ .rating_item::before {
+  content: "\2606";
+}
+.rating:hover .rating_item::before {
+  content: "\2605";
+}
+.rating_item:hover ~ .rating_item::before {
+  content: "\2606";
+}
+.rate_btn {
+  width: 30%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.closeModal{
+  position: absolute;
+  left: 88%;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.closeIcon{
+  font-size:30px;
+  color: white;
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    background: #ffffff;
+  }
+  .curr-acc {
+    display: none;
+  }
+  .header {
+    position: absolute;
+    width: 360px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    background: #d90429;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+  .main-container {
+    width: 100%;
+    height: auto;
+  }
+  .menu-bar {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    left: 10px;
+    top: 22px;
+    border: 1px solid #000;
+  }
+
+  .logo,
+  .notification-icons,
+  .user-profile,
+  .dash {
+    display: none;
+  }
+  .line,
+  .line2.line3 {
+    display: block;
+  }
+  .line1 {
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    left: 10px;
+    top: 22px;
+    background: #ffffff;
+  }
+  .line2 {
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    left: 10px;
+    top: 31px;
+    background: #ffffff;
+  }
+  .line3 {
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    left: 10px;
+    top: 40px;
+    background: #ffffff;
+  }
+  #logo {
+    display: block;
+    position: absolute;
+    width: 131px;
+    height: 33px;
+    left: 60px;
+    top: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+  #logout-btn {
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    width: 59px;
+    height: 25px;
+    left: 291px;
+    top: 19px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: #ffffff;
+  }
+  .dash {
+    display: none;
+  }
+  .nav-container {
+    display: none;
+  }
+  #nav-conta {
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 33px;
+    left: 0px;
+    top: 90px;
+    border-bottom: 1px solid #8d99ae;
+  }
+  #nav-summary {
+    position: absolute;
+    width: 84px;
+    height: 25px;
+    left: 18px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .active {
+    color: #ef233c;
+  }
+  #nav-details {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    left: 150px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: #8d99ae;
+  }
+  .active-tab {
+    position: absolute;
+    width: 120px;
+    height: 0px;
+    left: 0px;
+    top: 31px;
+    border: 2px solid #ef233c;
+  }
+  .hori-strip {
+    position: absolute;
+    width: 360px;
+    height: 0px;
+    left: 0px;
+    top: 122px;
+    border: 10px solid #8d99ae;
+  }
+  #acc-summary {
+    position: absolute;
+    width: 340px;
+    height: 160px;
+    left: 10px;
+    top: 137px;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #8d99ae;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .summary-title,
+  .acc-num-title,
+  .acc-num {
+    display: none;
+  }
+  .inner-div {
+    position: absolute;
+    width: 302px;
+    height: 117px;
+    left: 19px;
+    top: 18.5px;
+    border: 1px solid black;
+  }
+  #acc-num-mVersion,
+  .income-mv,
+  .acc-num-mvincome {
+    display: block;
+  }
+  #acc-num-mVersion {
+    position: absolute;
+    width: 215px;
+    height: 19px;
+    left: 29px;
+    top: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2b2d42;
+  }
+  .income-mv {
+    position: absolute;
+    width: 61px;
+    height: 25px;
+    left: 29px;
+    top: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #2b2d42;
+  }
+  .acc-num-mvincome {
+    position: absolute;
+    width: 180px;
+    height: 22px;
+    left: 121px;
+    top: 60px;
+    padding: 2px 0px 1px 5px;
+    background: #2b2d42;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  .spends,
+  .spend-amnt {
+    width: 140px;
+    top: 108px;
+  }
+  .spend-amnt {
+    background: #ef233c;
+  }
+  .serv {
+    position: absolute;
+    width: 66px;
+    height: 25px;
+    left: 10px;
+    top: 311px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+  .more-info {
+    position: absolute;
+    width: 192px;
+    height: 19px;
+    left: 9px;
+    top: 343px;
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+  .currentService {
+    position: absolute;
+    width: 360px;
+    height: 153px;
+    left: 0px;
+    top: 368px;
+    background: #2b2d42;
+  }
+  #current-service {
+    position: absolute;
+    width: 124px;
+    height: 19px;
+    left: 9px;
+    top: 11px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  #curr-acc-icons-banck,
+  .curr-acc-title,
+  .curr-acc-payroll,
+  .curr-acc-payments {
+    display: none;
+  }
+  #m-curr-acc {
+    display: block;
+    position: absolute;
+    width: 340px;
+    height: 98px;
+    top: 38px;
+    left: 10px;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+  .icons-setion {
+    position: absolute;
+
+    left: 17px;
+    top: 16px;
+    bottom: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+  }
+  #mobile-version-icons {
+    display: block;
+  }
+  #m-curr-accounts {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+  }
+  .payrolls {
+    left: 165px;
+  }
+  .payments {
+    left: 261px;
+  }
+  .m-curr-acc {
+    display: block;
+  }
+  .available-service,
+  .copyRight {
+    display: none;
+  }
+  #avail-service {
+    display: block;
+    position: absolute;
+    width: 340px;
+    height: 224px;
+    left: 9px;
+    top: 529px;
+  }
+  .m-avail-serice {
+    position: absolute;
+    height: 19px;
+    left: 9px;
+    top: 8px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+  .avail-serv-option {
+    position: absolute;
+    width: 322px;
+    height: 196px;
+    left: 9px;
+    top: 32px;
+
+    border: 1px solid #8d99ae;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .avail-serv-option-1,
+  .Invetments,
+  .tax-pay-ment,
+  .loans {
+    position: absolute;
+    width: 34px;
+    height: 64px;
+    left: 33px;
+    top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .avail-serv-option-1-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+  }
+  .Invetments {
+    left: 132px;
+  }
+  .tax-pay-ment {
+    width: 90px;
+    left: 210px;
+  }
+  .loans {
+    top: 106px;
+  }
+}

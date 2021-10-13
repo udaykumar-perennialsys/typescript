@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "fullN": "uday Kumar",
+      "dateInc": "1997-07-20",
+      "email": "uday@gmail.com",
+      "password": "123456",
+      "re_password": "123456",
+      "id": 1,
+      "current_service": [
+        {
+          "icon": "./pngImage/current_account.png",
+          "name": "Current Account",
+          "rating": "4"
+        },
+        {
+          "icon": "./pngImage/payroll.png",
+          "name": "Payroll",
+          "rating": "4"
+        },
+        {
+          "icon": "./pngImage/payments.png",
+          "name": "Payments",
+          "rating": "3"
+        }
+      ],
+      "available_services": [
+        {
+          "icon": "./pngImage/wallet.png",
+          "name": "Wallet"
+        },
+        {
+          "icon": "./pngImage/investment.png",
+          "name": "Investments"
+        },
+        {
+          "icon": "./pngImage/tax_payment.png",
+          "name": "Tax Payment"
+        },
+        {
+          "icon": "./pngImage/loans.png",
+          "name": "Loans"
+        }
+      ]
+    },
+    {
+      "fullN": "Ram Kumar",
+      "dateInc": "1997-07-20",
+      "email": "ram@gmail.com",
+      "password": "123456",
+      "re_password": "123456",
+      "id": 2,
+      "current_service": [
+        {
+          "icon": "./pngImage/current_account.png",
+          "name": "Current Account"
+        },
+        {
+          "icon": "./pngImage/payroll.png",
+          "name": "Payroll"
+        },
+        {
+          "icon": "./pngImage/payments.png",
+          "name": "Payments"
+        }
+      ],
+      "available_services": [
+        {
+          "icon": "./pngImage/wallet.png",
+          "name": "Wallet"
+        },
+        {
+          "icon": "./pngImage/investment.png",
+          "name": "Investments"
+        },
+        {
+          "icon": "./pngImage/tax_payment.png",
+          "name": "Tax Payment"
+        },
+        {
+          "icon": "./pngImage/loans.png",
+          "name": "Loans"
+        }
+      ]
+    },
+    {
+      "fullName": "vakil raj",
+      "dateInc": "2021-10-05",
+      "email": "vakil@gmail.com",
+      "password": "123",
+      "re_password": "123",
+      "id": 3
+    }
+  ]
+}

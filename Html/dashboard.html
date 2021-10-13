@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-bar">
+                <div class="line-3"></div>
+                <div class="line-2"></div>
+                <div class="line-1"></div>
+            </div>
+            <div class="title-text">Micro Bank</div>
+            <div class="notification">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.99989 20.6441C8.87489 20.6441 7.98389 19.7264 7.98389 18.616H11.9679C11.9679 19.815 11.0959 20.6441 9.99889 20.6441H9.99989ZM15.9999 9.34666V14.4649L18.0159 16.5415V17.5551H1.98489V16.5415L4.00089 14.4649V9.34666C4.00089 6.15972 5.64189 3.55268 8.50089 2.82857V2.10445C8.50089 1.23509 9.15689 0.559387 10.0009 0.559387C10.8449 0.559387 11.5009 1.23509 11.5009 2.10445V2.82857C14.3599 3.55268 16.0009 6.20813 16.0009 9.34666H15.9999ZM17.9689 8.81516C17.8279 6.06289 16.4689 3.69689 14.4529 2.20024L15.8589 0.752005C18.2499 2.63492 19.8429 5.53242 19.9839 8.81516H17.9679H17.9689ZM5.59389 2.20024C3.53089 3.69689 2.17189 6.06289 2.03089 8.81516H0.0148926C0.155893 5.53139 1.74889 2.63492 4.13989 0.752005L5.59389 2.20024Z"
+                        fill="#1A1A1A" />
+                </svg>
+            </div>
+            <div class="avatar">
+                <svg class="icon-avatar" width="16" height="10" viewBox="0 0 16 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.71094 2.91797C6.71094 3.92969 6.36458 4.70898 5.67188 5.25586C4.98372 5.79818 3.99707 6.06934 2.71191 6.06934H1.53613V10H0.374023V0.00585938H2.96484C5.46224 0.00585938 6.71094 0.976562 6.71094 2.91797ZM1.53613 5.07129H2.58203C3.61198 5.07129 4.3571 4.90495 4.81738 4.57227C5.27767 4.23958 5.50781 3.70638 5.50781 2.97266C5.50781 2.31185 5.29134 1.81966 4.8584 1.49609C4.42546 1.17253 3.75098 1.01074 2.83496 1.01074H1.53613V5.07129ZM11.8857 10H10.7236V1.03809H7.55859V0.00585938H15.0508V1.03809H11.8857V10Z"
+                        fill="white" />
+                </svg>
+            </div>
+
+            <div class="options">
+                <svg class="arrow" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L5 5L10 0H0Z" fill="black" fill-opacity="0.26" />
+                </svg>
+            </div>
+            <button class="logout-btn">Logout</button>
+        </header>
+
+        <div class="dash-text">Dashboard</div>
+
+        <nav>
+            <a class="summary-btn active" href="./dashboard.html">Summary</a>
+            <a class="details-btn" href="./dashboard2.html">Details</a>
+        </nav>
+
+        <div class="info-container">
+            <div id="account-summaries" class="acc-summary">
+                <span class="summary-title">Summary</span>
+
+                <div class="acc-details">
+                    <div class="account-num">Account No: 67238744</div>
+                    <span class="summary-titles acc">Account Number</span>
+                    <span class="total ttl">965487454</span>
+                </div>
+                <div class="income-summary">
+                    <span id="sm-title" class="summary-titles">Income</span>
+                    <span id="ttl" class="total">$ 20,000.00</span>
+                </div>
+                <div class="spend-summary">
+                    <span id="sm-title" class="summary-titles">Spends</span>
+                    <span id="ttl2" class="total">$ 11,000.00</span>
+                </div>
+            </div>
+
+            <span id="serviceText" class="serv-text">Services</span>
+            <span id="serviceMoreText" class="serv-more-text">Micro bank services for you</span>
+
+            <div id="curr-serv-widget" class="current-service-widgets">
+                <span id="service-curr-text" class="current-service-text">Current Services</span>
+                <div id="curr-service-avail">
+                    <div id="curr-acc-details" class="current-account-details">
+                        <svg id="curr-acc-icons-banck" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 25V42.5H17.5V25H10ZM25 25V42.5H32.5V25H25ZM5 55H52.5V47.5H5V55ZM40 25V42.5H47.5V25H40ZM28.75 2.5L5 15V20H52.5V15L28.75 2.5Z"
+                                fill="#D90429" />
+                        </svg>
+
+                        <!-- mobile version -->
+                        <svg id="mobile-version-icons" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="32" height="32" fill="url(#pattern0)" />
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0" transform="scale(0.03125)" />
+                                </pattern>
+                                <image id="image0" width="32" height="32"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAvQAAAL0BHVrG+gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN4SURBVFiFxddbbN9jGAfwT6dmpWhrYogxjUPIkmWE0GVRkoowc5rgYhfiFEIjWaKVCC5ckEgMWYwIGaPN3Cyju+iEjGGxxiGxWWfmWEbUYWRNROrieX7pL/+2azv/1Df55Xd4n/d5v+9zfH8cHOaiHe/iMzyEMw5GUc0UZE/E9bgBZ2ED3sYwFmMp+tGFbnxbDQJNuALL0Iq3sAmzcDXOTgI78Rp+Srlr8DleSjI/ToZMgaOxXOxwvzBzJ+7Kb3/mfTnqk8wSrMmxbViBWyt0tOPY8RYtK9mXE+7D3WMomX0A8nXCWuORH0Jvkj+ScMEaYc7twow/42JchU+xTvh17wEWHguNuamy+3qNuG8+XpdMr8Pa3P1W3CuCrlo4HvfgPeGmLrHB4YJAO/pwahUXHQ+n4AOxyeHa0sBC7J4GAgW6oSBQl4ymE7VEEK7FobhUpNAvFYKni9T8cIoLLBTu3VHxvREXoKcgUGA7nsl7GdfiMNxc8b1J+BO+HoP4qpz3asX300SdaK5kvE5kwS5hiW0YEFXswZLcJaIED+FLETdD2Iy2klwHfsir0LcTf2F95eIFtuDy0vvDeDyfa/BoErpduKUJx+AoUfkGUr6w7CM5p0y+r7zgjPGYjIFOUVjOwWr8LgK3A3/guRxrwwOTVVo7sQiiPnTkAt/jQjyG83O8RZTud3AlPhbFZkJM1gK3iWzZJRpQj+h0c3Acnhe1vhF78KJwU9UItMq6jZkibXeIyB9MAicLV0jZ1moSmIPv8nlQpGS3aFBb8ZQIxH9S5hucUE0C+3KBAt3iWNaC+1PPFpH30GDEGlUh8JEIvEJ5j0i/L/CmSNcGI7tuyTlVI/AK7hA7/A2fiKKyMcn041kRgDNxpwjaqhHYKDLgaVFkOrFA9Pa/RXquyLGVIgY2TEbxZOsA3CRKcJc4P+zBk6ljt0jHlUlssTxsTIRDSs+3iBPw4TgTi3CRCLa9wuwvi/RaLYpQvWhI7XhCHOGWifRsw404KcktSmILRD/oY3Q37Df67DdfHLHL3XAuLhM/IzU5r0d0xQKrcK7RwTg7STQz4oIlIs2KjlXGLMzLnZUxiPdL7+flVaBZZMmminnzRJYsxfrCAgP4SphmOlAn/q6aZuAN0VanG/XorTFyKv51mgkcgReKGNhs6j8e/xUNRATvF4H2v+BfAi3XDR1sjDgAAAAASUVORK5CYII=" />
+                            </defs>
+                        </svg>
+
+                        <!-- mobile version -->
+
+                        <span id="curr-service-text1" class="current-account-details-title">Current Account</span>
+                    </div>
+                    <div id="curr-acc-details-payroll" class="current-payroll-details">
+                        <svg id="curr-acc-icons-banck" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M52.5 7.5H7.5C4.75 7.5 2.5 9.75 2.5 12.5V47.5C2.5 50.25 4.75 52.5 7.5 52.5H52.5C55.25 52.5 57.5 50.25 57.5 47.5V12.5C57.5 9.75 55.25 7.5 52.5 7.5ZM52.5 47.5H7.5V12.5H32.5V22.5H52.5V47.5Z"
+                                fill="#D90429" />
+                        </svg>
+                        <!-- mobile version -->
+                        <img id="mobile-version-icons" src="../Image/005-slip.png" alt="">
+                        <!-- mobile version -->
+                        <span id="curr-service-text1" class="current-account-details-title">Payroll</span>
+                    </div>
+                    <div id="curr-acc-details-payment" class="current-payments-details">
+                        <svg id="curr-acc-icons-banck" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M30 5C16.2 5 5 16.2 5 30C5 43.8 16.2 55 30 55C43.8 55 55 43.8 55 30C55 16.2 43.8 5 30 5ZM33.525 45.225V50H26.85V45.175C22.575 44.275 18.95 41.525 18.675 36.675H23.575C23.825 39.3 25.625 41.35 30.2 41.35C35.1 41.35 36.2 38.9 36.2 37.375C36.2 35.3 35.1 33.35 29.525 32.025C23.325 30.525 19.075 27.975 19.075 22.85C19.075 18.55 22.55 15.75 26.85 14.825V10H33.525V14.875C38.175 16 40.5 19.525 40.65 23.35H35.75C35.625 20.575 34.15 18.675 30.2 18.675C26.45 18.675 24.2 20.375 24.2 22.775C24.2 24.875 25.825 26.25 30.875 27.55C35.925 28.85 41.325 31.025 41.325 37.325C41.3 41.9 37.875 44.4 33.525 45.225Z"
+                                fill="#D90429" />
+                        </svg>
+                        <!-- mobile version -->
+                        <img id="mobile-version-icons" src="../Image/002-pay.png" alt="">
+                        <!-- mobile version -->
+
+                        <span id="curr-service-text1" class="current-account-details-title">Payments</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="avail-serv-section" class="available-services">
+                <span id="available-services-titles" class="current-service-text">Available Services</span>
+
+                <div id="avail-serv-feature-wallet" class="available-services-wallet-features">
+                    <svg id="curr-acc-icons-banck" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M52.5 45V47.5C52.5 50.25 50.25 52.5 47.5 52.5H12.5C9.725 52.5 7.5 50.25 7.5 47.5V12.5C7.5 9.75 9.725 7.5 12.5 7.5H47.5C50.25 7.5 52.5 9.75 52.5 12.5V15H30C27.225 15 25 17.25 25 20V40C25 42.75 27.225 45 30 45H52.5ZM30 40H55V20H30V40ZM40 33.75C37.925 33.75 36.25 32.075 36.25 30C36.25 27.925 37.925 26.25 40 26.25C42.075 26.25 43.75 27.925 43.75 30C43.75 32.075 42.075 33.75 40 33.75Z"
+                            fill="#D90429" />
+                    </svg>
+                    <!-- mobile version -->
+                    <img id="mobile-version-icons" src="../Image/001-wallet.png" alt="">
+                    <!-- mobile version -->
+                    <span id="avail-serv-wallet-text" class="current-account-details-title">Wallet</span>
+                </div>
+
+                <div id="avail-serv-feature-investment" class="available-services-investment-features">
+                    <svg id="curr-acc-icons-banck" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M57.5 20C57.5 22.75 55.25 25 52.5 25C52.05 25 51.625 24.95 51.225 24.825L42.325 33.7C42.45 34.1 42.5 34.55 42.5 35C42.5 37.75 40.25 40 37.5 40C34.75 40 32.5 37.75 32.5 35C32.5 34.55 32.55 34.1 32.675 33.7L26.3 27.325C25.9 27.45 25.45 27.5 25 27.5C24.55 27.5 24.1 27.45 23.7 27.325L12.325 38.725C12.45 39.125 12.5 39.55 12.5 40C12.5 42.75 10.25 45 7.5 45C4.75 45 2.5 42.75 2.5 40C2.5 37.25 4.75 35 7.5 35C7.95 35 8.375 35.05 8.775 35.175L20.175 23.8C20.05 23.4 20 22.95 20 22.5C20 19.75 22.25 17.5 25 17.5C27.75 17.5 30 19.75 30 22.5C30 22.95 29.95 23.4 29.825 23.8L36.2 30.175C36.6 30.05 37.05 30 37.5 30C37.95 30 38.4 30.05 38.8 30.175L47.675 21.275C47.55 20.875 47.5 20.45 47.5 20C47.5 17.25 49.75 15 52.5 15C55.25 15 57.5 17.25 57.5 20Z"
+                            fill="#D90429" />
+                    </svg>
+                    <!-- mobile version -->
+                    <img id="mobile-version-icons" src="../Image/006-time.png" alt="">
+                    <!-- mobile version -->
+
+                    <span id="avail-serv-wallet-text" class="current-account-details-title">Investments</span>
+                </div>
+
+                <div id="avail-serv-feature-tax-payment" class="available-services-tax-payments-features">
+                    <svg id="curr-acc-icons-banck" width="56" height="43" viewBox="0 0 56 43" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.5 20H48V23.75H30.5V20ZM30.5 13.75H48V17.5H30.5V13.75ZM30.5 26.25H48V30H30.5V26.25ZM50.5 0H5.5C2.75 0 0.5 2.25 0.5 5V37.5C0.5 40.25 2.75 42.5 5.5 42.5H50.5C53.25 42.5 55.5 40.25 55.5 37.5V5C55.5 2.25 53.25 0 50.5 0ZM50.5 37.5H28V5H50.5V37.5Z"
+                            fill="#D90429" />
+                    </svg>
+
+                    <!-- mobile version -->
+                    <img id="mobile-version-icons" src="../Image/004-tax.png" alt="">
+                    <!-- mobile version -->
+
+                    <span id="avail-serv-wallet-text" class="current-account-details-title">Payments</span>
+                </div>
+
+                <div id="avail-serv-feature-loans-feat" class="available-services-loans-features">
+                    <svg id="curr-acc-icons-banck" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30 5C16.2 5 5 16.2 5 30C5 43.8 16.2 55 30 55C43.8 55 55 43.8 55 30C55 16.2 43.8 5 30 5ZM33.525 45.225V50H26.85V45.175C22.575 44.275 18.95 41.525 18.675 36.675H23.575C23.825 39.3 25.625 41.35 30.2 41.35C35.1 41.35 36.2 38.9 36.2 37.375C36.2 35.3 35.1 33.35 29.525 32.025C23.325 30.525 19.075 27.975 19.075 22.85C19.075 18.55 22.55 15.75 26.85 14.825V10H33.525V14.875C38.175 16 40.5 19.525 40.65 23.35H35.75C35.625 20.575 34.15 18.675 30.2 18.675C26.45 18.675 24.2 20.375 24.2 22.775C24.2 24.875 25.825 26.25 30.875 27.55C35.925 28.85 41.325 31.025 41.325 37.325C41.3 41.9 37.875 44.4 33.525 45.225Z"
+                            fill="#D90429" />
+                    </svg>
+
+                    <!-- mobile version -->
+                    <img id="mobile-version-icons" src="../Image/003-money-bag.png" alt="">
+                    <!-- mobile version -->
+
+                    <span id="avail-serv-wallet-text" class="current-account-details-title">Loans</span>
+                </div>
+            </div>
+            <div id="company-compyright" class="copyrights">© 2021 Micro Bank</div>
+        </div>
+    </div>
+</body>
+
+</html>
